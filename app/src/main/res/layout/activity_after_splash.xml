@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".After_splash"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/splash_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/after_splash_img"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:id="@+id/splash_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:paddingTop="10dp"
+            android:text="@string/after_splash_desc1"/>
+
+        <TextView
+            android:id="@+id/splash_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:text="@string/after_splash_desc2"/>
+
+        <TextView
+            android:id="@+id/splash_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="#666666"
+            android:text="@string/after_splash_welcome"/>
+
+        <Button
+            android:id="@+id/splash_signUp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:onClick="SignUp"
+            android:layout_height="60dp"
+            android:text="I'm new here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:backgroundTint="#FF9A7D"
+            android:paddingHorizontal="40dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            app:cornerRadius="20dp"/>
+
+        <Button
+            android:id="@+id/splash_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:onClick="SignIn"
+            android:text="Sign In"
+            android:backgroundTint="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white"
+            android:paddingHorizontal="59dp"
+            android:layout_gravity="center"
+            app:cornerRadius="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
